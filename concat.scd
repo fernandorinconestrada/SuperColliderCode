@@ -1,0 +1,1 @@
+{ Saw.ar(SinOsc.kr(LFNoise0.kr(MouseY.kr(0.01,1),3,4.5),0, 10,MouseY.kr(12,100))) }.play;
