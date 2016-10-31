@@ -1,0 +1,6 @@
+Udef('membraneCirclePatt', { |gate = 1, mulGray = 0.05, fund = 440, constBw = 0.01, constAmp = 0.1, tension = 0.1, loss = 0.99999|
+    var env;
+	env = EnvGen.kr(Env.perc(0.01, 0.5), gate);
+	UMixOut.ar(0, MembraneCircle.ar(Mix.new(BBandPass.ar(GrayNoise.ar(mulGray), fund*[1,2,3,4,5,6,7,8,9,10,11,12], constBw*[1,1,1,1,1,1,1,1,1,1,1,1], constAmp*[1,1,1,1,1,1,1,1,1,1,1,1]))*env, tension, loss), 0, true);
+}, [ ArgSpec('gate', 1.000000, ControlSpec(0.2, 20, 'linear', 0.1, 1, ""), false, 'sync'), ArgSpec('mulGray', 0.050000, ControlSpec(0.05, 0.2, 'linear', 0.01, 0.05, ""), false, 'sync'), ArgSpec('fund', 440.000000, ControlSpec(55, 2000, 'linear', 0.1, 110, ""), false, 'sync'), ArgSpec('constBw', 0.010000, ControlSpec(0.001, 0.2, 'linear', 0.001, 0.01, ""), false, 'sync'), ArgSpec('constAmp', 0.100000, ControlSpec(0.01, 0.4, 'linear', 0.01, 0.1, ""), false, 'sync'), ArgSpec('tension', 0.100000, ControlSpec(0.01, 0.5, 'linear', 0.01, 0.1, ""), false, 'sync'), ArgSpec('loss', 0.999990, ControlSpec(0.9999, 0.99999, 'linear', 1e-05, 0.99999, ""), false, 'sync'), ArgSpec('u_o_ar_0_bus', 0, PositiveIntegerSpec(), true, 'sync'), ArgSpec('u_o_ar_0_lvl', 0, 'amp'.asSpec, true, 'sync') ], 'default')
+
