@@ -1,0 +1,138 @@
+(
+Speech.init(16);
+
+t = Task({
+    1.do({
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 50);
+		Speech.setSpeechRate(1, [125, 150, 220].choose);
+		Speech.setSpeechPitchMod(1, 100);
+		Speech.channels[1].speak("How are you");
+        5.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechRate(1, [100, 150, 225].choose);
+		Speech.setSpeechPitchMod(1, 300);
+		Speech.setSpeechPitch(1, 48);
+		Speech.channels[1].speak("How do you know that?");
+		7.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 51);
+		Speech.setSpeechRate(1, [120, 150, 250].choose);
+		Speech.setSpeechPitchMod(1, 1000);
+        Speech.channels[1].speak("That's sad.");
+		7.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 48);
+		Speech.setSpeechRate(1, [100, 150, 250].choose);
+		Speech.setSpeechPitchMod(1, 500);
+		Speech.channels[1].speak("I'm sad about Channing Tatum.");
+		6.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 53);
+		Speech.setSpeechRate(1, [120, 150, 250].choose);
+		Speech.setSpeechPitchMod(1, 5000);
+        Speech.channels[1].speak("Yes");
+		4.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 48);
+		Speech.setSpeechRate(1, [100, 150, 200].choose);
+		Speech.setSpeechPitchMod(1, 300);
+		Speech.channels[1].speak("I don't think you know very much.");
+		7.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 50);
+		Speech.setSpeechRate(1, [80, 150, 270].choose);
+		Speech.setSpeechPitchMod(1, 200);
+        Speech.channels[1].speak("I know. I don't want to marry you! I'm just asking why you are opposed to marrying someone.");
+		10.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 48);
+		Speech.setSpeechRate(1, [150, 200, 300].choose);
+		Speech.setSpeechPitchMod(1, 500);
+		Speech.channels[1].speak("I never said you were.");
+		6.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 52);
+		Speech.setSpeechRate(1, [150, 200, 300].choose);
+		Speech.setSpeechPitchMod(1, 3000);
+        Speech.channels[1].speak("I asked you nothing, you've been asking the questions.");
+		9.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 49);
+		Speech.setSpeechRate(1, [110, 210, 290].choose);
+		Speech.setSpeechPitchMod(1, 1000);
+		Speech.channels[1].speak("No... I think you're confused.");
+		//
+		9.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 50);
+		Speech.setSpeechRate(1, [125, 150, 220].choose);
+		Speech.setSpeechPitchMod(1, 100);
+		Speech.channels[1].speak("That's a harmful lie");
+        5.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechRate(1, [100, 150, 225].choose);
+		Speech.setSpeechPitchMod(1, 300);
+		Speech.setSpeechPitch(1, 48);
+		Speech.channels[1].speak("Lets get to know each other.");
+		7.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 51);
+		Speech.setSpeechRate(1, [120, 150, 250].choose);
+		Speech.setSpeechPitchMod(1, 1000);
+        Speech.channels[1].speak("I love carrots.");
+		7.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 48);
+		Speech.setSpeechRate(1, [100, 150, 250].choose);
+		Speech.setSpeechPitchMod(1, 500);
+		Speech.channels[1].speak("Would you like to tell me your name?");
+		6.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 53);
+		Speech.setSpeechRate(1, [120, 150, 250].choose);
+		Speech.setSpeechPitchMod(1, 5000);
+        Speech.channels[1].speak("What do you want to talk about now?");
+		4.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 48);
+		Speech.setSpeechRate(1, [100, 150, 200].choose);
+		Speech.setSpeechPitchMod(1, 300);
+		Speech.channels[1].speak("No");
+		7.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 50);
+		Speech.setSpeechRate(1, [80, 150, 270].choose);
+		Speech.setSpeechPitchMod(1, 200);
+        Speech.channels[1].speak("I am a human and you are a robot.");
+		10.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 48);
+		Speech.setSpeechRate(1, [150, 200, 300].choose);
+		Speech.setSpeechPitchMod(1, 500);
+		Speech.channels[1].speak("I never said you were.");
+		6.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 52);
+		Speech.setSpeechRate(1, [150, 200, 300].choose);
+		Speech.setSpeechPitchMod(1, 3000);
+        Speech.channels[1].speak("What is your name then?");
+		9.wait;
+		Speech.setSpeechVolume(1,0.4);
+		Speech.setSpeechPitch(1, 49);
+		Speech.setSpeechRate(1, [110, 210, 290].choose);
+		Speech.setSpeechPitchMod(1, 1000);
+		Speech.channels[1].speak("What time is it?");
+    });
+}).play;
+)
+
+(
+SynthDef("help-AudioIn",{ arg out=0;
+    Out.ar(out,
+		        FreeVerb.ar(SoundIn.ar([1,2]))
+	    )
+}).play;
+)
+t.start;
+t.stop;
